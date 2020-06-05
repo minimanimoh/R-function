@@ -1,0 +1,97 @@
+## Basic Structure ##
+# if else
+
+if (condition1){
+   perform if condition1 met
+} else if (condition2){
+   perform if condition2 met
+} else {
+  perform if none of the conditions are met
+}
+
+# loops
+for (val in array){
+ perform for all elements in array
+}
+
+
+
+
+# functions
+function.name = function(inputs){
+  do something with inputs
+  return(results)
+}
+
+
+## for loop function of 4! 
+# print function inside
+
+z = 4
+factorial.result = 1
+z.array = seq(1,z,1)
+for (num in z.array){
+factorial.result = num*factorial.result
+print(factorial.result)
+}
+
+[1] 1
+[1] 2
+[1] 6
+[1] 24
+
+# print function outside
+factorial.result = 1
+z.array = seq(1,z,1)
+for (num in z.array){
+factorial.result = num*factorial.result
+}
+print(factorial.result)
+[1] 24
+
+
+
+## function of n! (for each changing value everytime)
+
+calculate.factorial = function(num){
+    factorial.value = 1
+    range.values = seq(1,num, 1)        ##
+    for (val in range.values){
+        factorial.value = factorial.value*val
+    }
+    return(factorial.value)
+}
+
+calculate.factorial(3)
+
+
+## 1+2+...+100
+
+total <- function(n) {
+sum = 0
+
+for(num in seq(1,100, by = 1)) {
+    sum = num + sum
+    print(sum)
+ }
+}
+
+total(100)
+
+
+## difference between function() and function(x)
+
+square.two <- function(){
+    x = 2*2
+    return(x)
+}
+
+square.num <- function(x) {
+  y = x^2
+  return(y)
+  }
+  
+ raise.num <- function(num.to.raise, raise.by) {
+ z = num.to.raise**raise.by
+ return(z)
+ }
